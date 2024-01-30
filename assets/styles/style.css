@@ -1,0 +1,337 @@
+
+body {
+    background-color: black;
+    font-family: var(--font-padrao);
+    scroll-behavior: smooth;
+}
+
+.body {
+    display: flex;
+    padding: 10px;
+    gap: 8px;
+    max-height: 100vh;
+    
+}  
+
+a, a:visited, a:active {
+    color: inherit;
+}
+
+
+.barra-lateral-esquerda {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    flex: 0 1 420px;
+}
+
+
+.siderbar {
+    max-width: 420px;
+    color: white;
+
+}
+
+.logo {
+    display: flex;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+
+.logo img {
+    width: 80px;
+
+}
+
+.siderbar__navigation {
+    background-color: #121212;
+    color: white;
+    border-radius: 8px;
+    padding: 16px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.siderbar__navigation ul li a, a:visited, a:active {
+    color: gray;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bolder;
+    
+}
+
+
+.siderbar__navigation ul li a:hover {
+    color: #fff;
+}
+
+
+
+.siderbar nav ul {
+    padding: 0 0 20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.siderbar__navigation ul li span {
+    margin: 0 10px 0 0;
+    
+}
+
+.biblioteca {
+    background-color: #121212;
+    width: 422px;
+    height: 680px;
+    border-radius: 8px;
+    color: #7c7c7c;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 15px 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    color: rgb(255, 243, 243);
+    top: 168px;
+
+}
+
+.biblioteca header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+
+.biblioteca header a {
+    font-family: "DM sans", sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    color: gray;
+
+}
+
+
+.biblioteca header a:hover{
+    color: white;
+}
+
+.fa-plus {
+    transform: scale(1.5);
+}
+
+.biblioteca-section {
+    padding: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    background-color: #242424;
+    border-radius: 8px;
+    font-size: 16px;
+
+}
+
+
+.biblioteca-section span {
+    font-weight: bold;
+}
+
+.biblioteca-section .btn-biblioteca-section {
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    font-size: 14px;
+    padding: 8px 20px;
+    color: black;
+    font-weight: bold;
+}
+
+
+.cookies {
+    font-size: 16px;
+    padding: 50px 10px;
+    height: 250px;
+}
+
+.languages {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+.languages a > span {
+    color: white;
+}
+
+
+.languages:Hover {
+    cursor: pointer;
+}
+
+
+
+.playlists {
+    position: fixed;
+    left: 440px;
+    background-color: var(--fundo-cinza);
+    width: 76.7vw;
+    height: 91.2vh;
+    border-radius: 8px;
+    padding: 5px;
+
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.setas {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+
+}
+
+.fa-arrow-left, .fa-arrow-right {
+    color: gray;
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fa-arrow-left:hover, .fa-arrow-right:hover {
+    transform: scale(1.2);
+    
+}
+
+
+
+.barra__search {
+    width: 30vw;
+    background-color: var(--fundo-cinza-claro);
+    margin-top: 10px;
+    border-radius: 500px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+}
+
+.barra__search input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    color: white;
+}
+
+.barra__botoes  {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.barra__botoes button {
+    font-family: var(--font-padrao);
+    background: transparent;
+    border: none;
+    margin-right: 30px;
+    font-size: 1.1rem;
+    color: white;
+
+}
+
+
+.barra__botoes .Entrar {
+    background-color: white;
+    color: black;
+    padding: 10px 32px;
+    border-radius: 500px;
+    font-family: var(--font-padrao);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.barra__botoes button:hover {
+   transform: scale(1.1);
+
+}
+
+
+
+
+
+
+.footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: 5px;
+    background: linear-gradient(90deg,#af2896,#509bf5);;
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.footer a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.inscreva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50px;
+    height: 40px;
+    color: black;
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.inscreva a {
+    color: black;
+    font-weight: bold;
+
+}
